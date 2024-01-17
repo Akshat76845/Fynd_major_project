@@ -9,7 +9,7 @@ const User = require("../db/User");
 const authKeys = require("./authKeys");
 
 const filterJson = (obj, unwantedKeys) => {
-  const filteredObj = {};
+const filteredObj = {};
   Object.keys(obj).forEach((key) => {
     if (unwantedKeys.indexOf(key) === -1) {
       filteredObj[key] = obj[key];
